@@ -6,7 +6,6 @@ export const calculateSubmarinePosition = (input: string) => {
     let horizontalPosition: number = 0;
     let depth: number = 0;
     let aim: number = 0;
-    let aimDiffer: number = 0;
     
     for (let i = 0; i < inputArray.length - 1; i = i + 2) {
         bufferArray = inputArray.slice(i, i + 2);  
