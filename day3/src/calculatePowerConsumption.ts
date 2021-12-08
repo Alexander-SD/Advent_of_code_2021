@@ -1,17 +1,17 @@
 export const calculatePowerConsuption = (input: string) => {
     const inputArray: string[] = input.split(' ');
-    let bufferArray: any;
+    let buffer: any;
     let countZeros: number[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
     let countOnes: number[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
     let gammaRate: string = '';
     let epsilonRate: string = '';
 
     for (let i = 0; i < inputArray.length; i++) {
-        bufferArray = inputArray[i];
-        for (let b = 0; b < bufferArray.length; b++) {
-            if (bufferArray[b] === '0') {
+        buffer = inputArray[i];
+        for (let b = 0; b < buffer.length; b++) {
+            if (buffer[b] === '0') {
                 countZeros[b]++;
-            } else if (bufferArray[b] === '1') {
+            } else if (buffer[b] === '1') {
                 countOnes[b]++;
             }
         }
