@@ -6,6 +6,7 @@ export const calculatePowerConsuption = (input: string) => {
     let gammaRate: string = '';
     let epsilonRate: string = '';
 
+    // Calculating counters
     for (let i = 0; i < inputArray.length; i++) {
         buffer = inputArray[i];
         for (let b = 0; b < buffer.length; b++) {
