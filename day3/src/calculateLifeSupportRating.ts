@@ -107,5 +107,5 @@ export const calculateLifeSupportRating = (input: string) => {
         }
     }
 
-    return parseInt(oxygenGeneratorRating.toString(), 2) * parseInt(co2ScrubberRating.toString(), 2);
+    return parseInt(oxygenGeneratorRating[0], 2) * parseInt(co2ScrubberRating[0], 2);
 }
